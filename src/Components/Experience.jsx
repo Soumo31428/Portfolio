@@ -3,15 +3,13 @@ import { motion, useScroll, useSpring, useTransform } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
 import Reveal from '../Animation/Reveal'
 import {
-  currentLeadership,
-  currentWork,
   experienceCounts,
   experiencesData,
   latestEducation,
   siteContent,
 } from '../content'
 
-const experienceTypes = ['Work', 'Education', 'Leadership']
+const experienceTypes = ['Education', 'Achievement']
 
 function ShootingStarLine({ timelineRef }) {
   const canvasRef = useRef(null)
@@ -195,30 +193,31 @@ export default function Experience() {
     value: String(experienceCounts[type] ?? 0),
   }))
 
-  const overviewPanels = [
-    {
-      label: siteContent.experienceSection.overviewLabels.currentRole,
-      value: currentWork?.role ?? 'Software Engineer',
-      detail: currentWork?.title ?? 'Professional experience',
-    },
-    {
-      label: siteContent.experienceSection.overviewLabels.academicTrack,
-      value: latestEducation?.role ?? 'Software Engineering',
-      detail: latestEducation?.title ?? 'Formal study path',
-    },
-    {
-      label: siteContent.experienceSection.overviewLabels.leadership,
-      value: currentLeadership?.role ?? 'Technology leadership',
-      detail: currentLeadership?.title ?? 'Community contribution',
-    },
-  ]
+  const overviewPanels =
+    siteContent.experienceSection.overviewPanels ?? [
+      {
+        label: siteContent.experienceSection.overviewLabels.currentRole,
+        value: latestEducation?.role ?? 'B.Tech student',
+        detail: latestEducation?.title ?? 'Computer Science & Engineering',
+      },
+      {
+        label: siteContent.experienceSection.overviewLabels.academicTrack,
+        value: latestEducation?.role ?? 'B.Tech, CSE',
+        detail: latestEducation?.title ?? 'TINT, Kolkata',
+      },
+      {
+        label: siteContent.experienceSection.overviewLabels.leadership,
+        value: siteContent.site.interests?.[0] ?? 'Chess, Sudoku, AI models',
+        detail: (siteContent.site.interests ?? []).slice(1).join(', ') || 'Exploring new models',
+      },
+    ]
 
   return (
     <div className="section-inner">
       {/* Header */}
       <div className="section-header max-w-3xl">
         <Reveal>
-          <span className="section-label">Experience</span>
+          <span className="section-label">Education</span>
         </Reveal>
 
         <Reveal delay={0.05}>

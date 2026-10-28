@@ -29,51 +29,61 @@ export default function Certifications() {
 
             <Reveal delay={0.1}>
               <p className="section-copy mx-auto max-w-2xl">
-                Industry-recognized certifications in cloud platforms, DevOps, and modern software
-                architecture.
+                Coursework and credentials in data science, machine learning, NLP, and agentic AI.
               </p>
             </Reveal>
           </div>
 
           <MobileParallax offset={24} scale={1.02} className="mx-auto w-full">
             <div className="mx-auto mt-12 max-w-4xl space-y-4">
-              {certifications.map((cert, index) => (
-                <motion.a
-                  key={cert.title}
-                  href={cert.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block rounded-2xl border border-indigo-200/20 bg-white/[0.03] p-6 backdrop-blur-xl transition-all hover:border-indigo-300/40 hover:bg-white/[0.05]"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-base font-semibold text-white group-hover:text-sky-300 transition-colors">
-                        {cert.title}
-                      </h3>
-                      <p className="mt-2 text-sm text-slate-400">
-                        {cert.issuer}
-                        {cert.year && (
-                          <span className="ml-2 inline-block text-xs text-slate-500">
-                            ({cert.year})
-                          </span>
+              {certifications.map((cert, index) => {
+                const Wrapper = cert.href ? motion.a : motion.div
+                const wrapperProps = cert.href
+                  ? {
+                      href: cert.href,
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    }
+                  : {}
+
+                return (
+                  <Wrapper
+                    key={cert.title}
+                    {...wrapperProps}
+                    className="group block rounded-2xl border border-indigo-200/20 bg-white/[0.03] p-6 backdrop-blur-xl transition-all hover:border-indigo-300/40 hover:bg-white/[0.05]"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold text-white group-hover:text-sky-300 transition-colors">
+                          {cert.title}
+                        </h3>
+                        <p className="mt-2 text-sm text-slate-400">
+                          {cert.issuer}
+                          {cert.year && (
+                            <span className="ml-2 inline-block text-xs text-slate-500">
+                              ({cert.year})
+                            </span>
+                          )}
+                        </p>
+                        {cert.description && (
+                          <p className="mt-3 text-sm text-slate-300">{cert.description}</p>
                         )}
-                      </p>
-                      {cert.description && (
-                        <p className="mt-3 text-sm text-slate-300">{cert.description}</p>
-                      )}
-                    </div>
-                    <div className="flex-shrink-0">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-300/30 bg-indigo-500/10 text-lg group-hover:bg-indigo-500/20 transition-colors">
-                        <FiExternalLink className="text-indigo-300" />
                       </div>
+                      {cert.href ? (
+                        <div className="flex-shrink-0">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-300/30 bg-indigo-500/10 text-lg group-hover:bg-indigo-500/20 transition-colors">
+                            <FiExternalLink className="text-indigo-300" />
+                          </div>
+                        </div>
+                      ) : null}
                     </div>
-                  </div>
-                </motion.a>
-              ))}
+                  </Wrapper>
+                )
+              })}
             </div>
           </MobileParallax>
         </div>

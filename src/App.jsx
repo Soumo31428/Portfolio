@@ -6,13 +6,13 @@ import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import OrientationOverlay from './Components/OrientationOverlay'
 import Aurora from './component/Aurora'
-import portrait from './assets/my_pic.webp'
+import heroVisual from './assets/intro_bg.webp'
 import { projectsData } from './content'
 import { useProgressLoader } from './hooks/useProgressLoader'
 import { useOrientationDetector } from './hooks/useOrientationDetector'
 import { THEME_STORAGE_KEY, resolveInitialTheme } from './theme'
 
-const criticalAssets = [portrait, ...projectsData.map((project) => project.image).filter(Boolean)]
+const criticalAssets = [heroVisual, ...projectsData.map((project) => project.image).filter(Boolean)]
 
 const fallbackAuroraStops = ['#93c5fd', '#6366f1', '#f8fafc']
 

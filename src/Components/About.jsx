@@ -73,7 +73,7 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="section-copy max-w-2xl">{siteContent.about.copy}</p>
+          <p className="section-copy max-w-2xl whitespace-pre-line">{siteContent.about.copy}</p>
         </Reveal>
       </div>
 

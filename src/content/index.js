@@ -1,30 +1,13 @@
-import HMS from '../assets/HMS.webp'
-import HostelApp from '../assets/HostelApp.webp'
-import horizon from '../assets/HorizonNewsApp.webp'
-import envirosense from '../assets/enviro_sense.webp'
-import stockPortal from '../assets/stock_p.webp'
+import introBg from '../assets/intro_bg.webp'
 import portfolio from './portfolio.json'
-import hotel_booking from '../assets/hotel_booking.webp'
-import sobriety_app from '../assets/sobriety_app.webp'
 
 const projectImages = {
-  hostel: HostelApp,
-  hospital: HMS,
-  stockPortal,
-  horizon,
-  envirosense,
-  hotel_booking,
-  sobriety_app
-}
-
-const getStartYear = (period = '') => {
-  const match = period.match(/\b\d{4}\b/)
-  return match ? Number(match[0]) : null
+  intro: introBg,
 }
 
 const resolveProjectImage = (project) => ({
   ...project,
-  image: projectImages[project.imageKey] ?? project.image ?? '',
+  image: projectImages[project.imageKey] ?? project.image ?? introBg,
 })
 
 export const siteContent = portfolio
@@ -49,16 +32,13 @@ export const experienceCounts = experiencesData.reduce((counts, experience) => {
   return counts
 }, {})
 
-const liveDemoCount = projectsData.filter((project) => Boolean(project.liveDemo)).length
-const firstWorkYear = workExperiences
-  .map((experience) => getStartYear(experience.period))
-  .filter(Boolean)
-  .sort((left, right) => left - right)[0]
+const publicRepoCount = projectsData.filter((project) => Boolean(project.githubRepo)).length
+const guidedProjectCount = projectsData.filter((project) => project.guided).length
 
 export const portfolioStats = {
   projectCount: projectsData.length,
-  liveDemoCount,
-  privateBuildCount: projectsData.length - liveDemoCount,
+  liveDemoCount: publicRepoCount,
+  privateBuildCount: guidedProjectCount,
   coreLaneCount: siteContent.site.coreLanes.length,
-  firstWorkYear,
+  firstWorkYear: siteContent.site.graduationYear ?? 2026,
 }

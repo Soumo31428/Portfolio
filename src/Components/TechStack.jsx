@@ -1,52 +1,14 @@
-import { FaJava, FaReact, FaLaravel,  } from 'react-icons/fa'
-import { PiFileCSharp } from 'react-icons/pi'
 import {
-  SiAmazonwebservices,
-  SiAndroidstudio,
   SiBootstrap,
   SiCss3,
-  SiCplusplus,
   SiDocker,
-  SiEslint,
-  SiExpress,
-  SiFastapi,
-  SiFigma,
-  SiFirebase,
-  SiFlask,
-  SiGit,
-  SiGithub,
   SiGithubactions,
   SiHtml5,
-  SiIntellijidea,
-  SiJavascript,
-  SiJest,
-  SiJupyter,
-  SiKotlin,
-  SiMicrosoftazure,
-  SiMicrosoftsqlserver,
-  SiMongodb,
-  SiMui,
   SiMysql,
-  SiNestjs,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostman,
   SiPostgresql,
-  SiPrettier,
-  SiPhp,
   SiPython,
   SiSqlite,
-  SiSpringboot,
   SiSwagger,
-  SiTailwindcss,
-  SiTypescript,
-  SiVercel,
-  SiVitest,
-  SiVisualstudiocode,
-  SiVite,
-  SiDotnet,
-  SiInertia,
-  SiRender 
 } from 'react-icons/si'
 import { motion } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
@@ -54,57 +16,16 @@ import Reveal from '../Animation/Reveal'
 import { siteContent } from '../content'
 
 const stackIconMap = {
-  androidstudio: SiAndroidstudio,
-  aws: SiAmazonwebservices,
-  azure: SiMicrosoftazure,
   bootstrap: SiBootstrap,
-  cpp: SiCplusplus,
-  csharp: PiFileCSharp,
   css: SiCss3,
   docker: SiDocker,
-  dotnet: SiDotnet,
-  eslint: SiEslint,
-  expressjs: SiExpress,
-  laravel: FaLaravel,
-  inertiajs: SiInertia,
-  fastapi: SiFastapi,
-  figma: SiFigma,
-  firebase: SiFirebase,
-  flask: SiFlask,
-  git: SiGit,
-  github: SiGithub,
   githubActions: SiGithubactions,
   html: SiHtml5,
-  intellijidea: SiIntellijidea,
-  java: FaJava,
-  javascript: SiJavascript,
-  jest: SiJest,
-  jupyter: SiJupyter,
-  kotlin: SiKotlin,
-  microsoftsqlserver: SiMicrosoftsqlserver,
-  mongodb: SiMongodb,
-  mui: SiMui,
   mysql: SiMysql,
-  nestjs: SiNestjs,
-  nextjs: SiNextdotjs,
-  nodejs: SiNodedotjs,
-  postman: SiPostman,
   postgresql: SiPostgresql,
-  prettier: SiPrettier,
-  php: SiPhp,
   python: SiPython,
-  react: FaReact,
-  reactnative: FaReact,
-  render: SiRender,
   sqlite: SiSqlite,
-  springboot: SiSpringboot,
   swagger: SiSwagger,
-  tailwind: SiTailwindcss,
-  typescript: SiTypescript,
-  vercel: SiVercel,
-  vitest: SiVitest,
-  vite: SiVite,
-  vscode: SiVisualstudiocode,
 }
 
 const getStackFallback = (label = '') =>
@@ -166,7 +87,6 @@ export default function TechStack() {
                   <div className="flex flex-wrap gap-3 sm:gap-4">
                     {section.items?.map(({ label, iconKey }, itemIndex) => {
                       const Icon = stackIconMap[iconKey]
-                      const globalIndex = sectionIndex * 20 + itemIndex
 
                       return (
                         <motion.div

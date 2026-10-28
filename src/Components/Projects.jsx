@@ -9,7 +9,8 @@ const projectShape = PropTypes.shape({
   category: PropTypes.string.isRequired,
   challenge: PropTypes.string.isRequired,
   delivery: PropTypes.string.isRequired,
-  githubRepo: PropTypes.string.isRequired,
+  githubRepo: PropTypes.string,
+  guided: PropTypes.bool,
   image: PropTypes.string.isRequired,
   impact: PropTypes.string.isRequired,
   liveDemo: PropTypes.string,
@@ -17,7 +18,7 @@ const projectShape = PropTypes.shape({
   stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   summary: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
+  year: PropTypes.string,
 })
 
 function ProjectCaseStudy({ project, index }) {
@@ -53,17 +54,17 @@ function ProjectCaseStudy({ project, index }) {
 
             <div className="absolute inset-x-0 bottom-8 flex items-end justify-between gap-4 px-5">
               <div>
-                <p className="metric-label text-[#7dd3fc]">Case study {index + 1}</p>
+                <p className="metric-label text-[#7dd3fc]">Project {index + 1}</p>
                 <p className="mt-1.5 text-base font-semibold text-white">{project.category}</p>
               </div>
-              <span className="eyebrow-chip">{project.year}</span>
+              {project.year ? <span className="eyebrow-chip">{project.year}</span> : null}
             </div>
           </div>
 
           <div className="relative z-10 -mt-6 mx-3 mb-3">
             <div className="glass-panel rounded-[1.7rem] p-5">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="eyebrow-chip">Selected work</span>
+                <span className="eyebrow-chip">{project.guided ? 'Guided project' : 'Selected work'}</span>
                 <span className="metric-label text-white/50">{project.category}</span>
               </div>
 
@@ -134,7 +135,7 @@ function ProjectCaseStudy({ project, index }) {
                     Live demo
                   </motion.a>
                 ) : (
-                  <span className="eyebrow-chip">Private build</span>
+                  <span className="eyebrow-chip">{project.guided ? 'Guided project' : 'Source on request'}</span>
                 )}
               </div>
             </div>
@@ -157,10 +158,10 @@ function ProjectCaseStudy({ project, index }) {
               <div className="project-image-overlay absolute inset-0" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
                 <div>
-                  <p className="metric-label text-[#7dd3fc]">Case study {index + 1}</p>
+                  <p className="metric-label text-[#7dd3fc]">Project {index + 1}</p>
                   <p className="mt-2 text-lg font-semibold text-white">{project.category}</p>
                 </div>
-                <span className="eyebrow-chip">{project.year}</span>
+                {project.year ? <span className="eyebrow-chip">{project.year}</span> : null}
               </div>
             </div>
           </div>
@@ -172,7 +173,7 @@ function ProjectCaseStudy({ project, index }) {
           >
             <div>
               <div className="flex flex-wrap items-center gap-3">
-                <span className="eyebrow-chip">Selected work</span>
+                <span className="eyebrow-chip">{project.guided ? 'Guided project' : 'Selected work'}</span>
                 <span className="metric-label text-white/50">{project.category}</span>
               </div>
 
@@ -242,7 +243,7 @@ function ProjectCaseStudy({ project, index }) {
                     Live demo
                   </motion.a>
                 ) : (
-                  <span className="eyebrow-chip">Private build</span>
+                  <span className="eyebrow-chip">{project.guided ? 'Guided project' : 'Source on request'}</span>
                 )}
               </div>
             </div>

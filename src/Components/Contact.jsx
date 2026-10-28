@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import { FiArrowUpRight, FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi'
-import { SiGithub, SiInstagram, SiLinkedin, SiMedium, SiWhatsapp } from 'react-icons/si'
+import { FiArrowUpRight, FiGithub, FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi'
+import { SiGithub } from 'react-icons/si'
 import { AnimatePresence, motion } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
 import Reveal from '../Animation/Reveal'
@@ -15,16 +15,13 @@ const initialForm = {
 
 const socialIconMap = {
   github: SiGithub,
-  instagram: SiInstagram,
-  linkedin: SiLinkedin,
-  medium: SiMedium,
-  whatsapp: SiWhatsapp,
 }
 
 const contactIconMap = {
   location: FiMapPin,
   mail: FiMail,
   phone: FiPhone,
+  github: FiGithub,
 }
 
 export default function Contact() {
@@ -100,13 +97,20 @@ export default function Contact() {
 
             {siteContent.contact.contactItems.map(({ label, value, href, iconKey }, index) => {
               const Icon = contactIconMap[iconKey]
+              const isExternal = Boolean(href) && href.startsWith('http')
+              const Wrapper = href ? motion.a : motion.div
+              const wrapperProps = href
+                ? {
+                    href,
+                    target: isExternal ? '_blank' : undefined,
+                    rel: isExternal ? 'noopener noreferrer' : undefined,
+                  }
+                : {}
 
               return (
                 <Reveal key={label} delay={0.05 + index * 0.04}>
-                  <motion.a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Wrapper
+                    {...wrapperProps}
                     className="editorial-card flex items-center justify-between rounded-[1.5rem] px-5 py-4"
                     whileHover={{ x: 6 }}
                   >
@@ -120,8 +124,8 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <FiArrowUpRight className="text-slate-500" />
-                  </motion.a>
+                    {href ? <FiArrowUpRight className="text-slate-500" /> : null}
+                  </Wrapper>
                 </Reveal>
               )
             })}

@@ -4,6 +4,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: true,
+    allowedHosts: ['.monkeycode-ai.live'],
+  },
+  preview: {
+    host: true,
+    allowedHosts: ['.monkeycode-ai.live'],
+  },
   resolve: {
     alias: {
       'react-icons/si': fileURLToPath(

@@ -227,7 +227,7 @@ const SEMANTIC_SYNONYMS = {
   ai: ['artificial', 'machine', 'learning', 'ml'],
   backend: ['api', 'server', 'spring', 'node', 'asp.net'],
   frontend: ['react', 'ui', 'interface', 'tailwind', 'vite'],
-  contact: ['email', 'phone', 'linkedin', 'reach'],
+  contact: ['email', 'phone', 'github', 'reach'],
 }
 
 const DOMAIN_KEYWORDS = new Set([
@@ -248,7 +248,6 @@ const DOMAIN_KEYWORDS = new Set([
   'contact',
   'email',
   'phone',
-  'linkedin',
   'github',
   'availability',
   'role',

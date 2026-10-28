@@ -19,19 +19,19 @@ export function detectQueryType(question = '') {
     return 'skills'
   }
 
-  if (includesAny(q, ['certification', 'certificate', 'az-900'])) {
+  if (includesAny(q, ['certification', 'certificate', 'udemy', 'oracle', 'agentic'])) {
     return 'certification'
   }
 
-  if (includesAny(q, ['education', 'degree', 'diploma', 'bsc', 'study'])) {
+  if (includesAny(q, ['education', 'degree', 'b.tech', 'btech', 'study', 'cgpa', 'school'])) {
     return 'education'
   }
 
-  if (includesAny(q, ['achievement', 'award', 'vice president', 'leadership'])) {
+  if (includesAny(q, ['achievement', 'award', 'scholarship', 'hackathon', 'sih', 'nmmse'])) {
     return 'achievement'
   }
 
-  if (includesAny(q, ['contact', 'email', 'phone', 'linkedin', 'reach'])) {
+  if (includesAny(q, ['contact', 'email', 'phone', 'github', 'reach'])) {
     return 'contact'
   }
 
