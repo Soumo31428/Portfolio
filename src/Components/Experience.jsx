@@ -197,7 +197,7 @@ export default function Experience() {
     siteContent.experienceSection.overviewPanels ?? [
       {
         label: siteContent.experienceSection.overviewLabels.currentRole,
-        value: latestEducation?.role ?? 'B.Tech student',
+        value: latestEducation?.role ?? 'B.Tech CSE graduate',
         detail: latestEducation?.title ?? 'Computer Science & Engineering',
       },
       {

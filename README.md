@@ -1,6 +1,6 @@
 # Souvik Chakraborty Portfolio
 
-Personal portfolio for Souvik Chakraborty, a final-year B.Tech Computer Science & Engineering student (2026) focused on backend engineering and AI-powered applications.
+Personal portfolio for Souvik Chakraborty, a B.Tech Computer Science & Engineering graduate (2026) focused on backend engineering and AI-powered applications.
 
 ## Stack
 

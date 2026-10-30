@@ -32,7 +32,7 @@
   "hero": {
     "kicker": "Backend Developer | Software Engineer | AI Application Developer",
     "headline": "Souvik Chakraborty",
-    "intro": "Final-year B.Tech Computer Science & Engineering student (2026) who enjoys building secure Django and Django REST Framework backends and LLM-powered applications. Hands-on with REST APIs, JWT authentication, PostgreSQL, Redis, Celery, RabbitMQ and Docker, and with the Gemini and OpenAI APIs.",
+    "intro": "B.Tech Computer Science & Engineering graduate (2026) who enjoys building secure Django and Django REST Framework backends and LLM-powered applications. Hands-on with REST APIs, JWT authentication, PostgreSQL, Redis, Celery, RabbitMQ and Docker, and with the Gemini and OpenAI APIs.",
     "ctaButtons": [
       {
         "label": "View selected work",
@@ -86,12 +86,12 @@
       "caseStudies": "featured projects",
       "liveDemos": "public source repos",
       "coreLanesPrefix": "focus areas:",
-      "workStart": "expected graduation"
+      "workStart": "graduated"
     }
   },
   "about": {
     "title": "Backend engineering and AI-powered applications.",
-    "copy": "I am a final-year B.Tech Computer Science & Engineering student (2026). I enjoy building secure Django and Django REST Framework backends and LLM-powered applications.\n\nI work with REST APIs, JWT authentication, PostgreSQL, Redis, Celery, RabbitMQ, and Docker, and with the Gemini and OpenAI APIs. I am looking for a Backend or Software Engineer role where I can keep learning, adapt quickly, and contribute as part of a team.",
+    "copy": "I am a B.Tech Computer Science & Engineering graduate (2026). I enjoy building secure Django and Django REST Framework backends and LLM-powered applications.\n\nI work with REST APIs, JWT authentication, PostgreSQL, Redis, Celery, RabbitMQ, and Docker, and with the Gemini and OpenAI APIs. I am looking for a Backend or Software Engineer role where I can keep learning, adapt quickly, and contribute as part of a team.",
     "principles": [
       {
         "title": "Secure backend systems",
@@ -112,7 +112,7 @@
     "highlightLabels": {
       "projects": "featured backend and AI projects",
       "coreLanesPrefix": "main lanes:",
-      "workStart": "expected graduation"
+      "workStart": "graduated"
     },
     "capabilities": [
       "Building Django and Django REST Framework backends with JWT authentication, API keys, and usage quotas.",
@@ -218,7 +218,7 @@
   },
   "experienceSection": {
     "title": "Education, scholarships, and what I am building toward.",
-    "copy": "I am a final-year B.Tech Computer Science & Engineering student at Maulana Abul Kalam Azad University of Technology, expected 2026. The timeline below is education and achievements only — there is no invented employment history.",
+    "copy": "I am a B.Tech Computer Science & Engineering graduate (2026) from Maulana Abul Kalam Azad University of Technology. The timeline below is education and achievements only — there is no invented employment history.",
     "overviewLabels": {
       "currentRole": "Currently",
       "academicTrack": "Academic track",
@@ -227,8 +227,8 @@
     "overviewPanels": [
       {
         "label": "Currently",
-        "value": "Final-year B.Tech student",
-        "detail": "Computer Science & Engineering, expected 2026"
+        "value": "B.Tech CSE graduate",
+        "detail": "Computer Science & Engineering, 2026"
       },
       {
         "label": "Academic track",
@@ -496,11 +496,11 @@
   ],
   "experiences": [
     {
-      "period": "Expected 2026",
+      "period": "2026",
       "type": "Education",
       "title": "Maulana Abul Kalam Azad University of Technology",
       "role": "B.Tech, Computer Science & Engineering",
-      "summary": "Final-year B.Tech Computer Science & Engineering student at Maulana Abul Kalam Azad University of Technology. CGPA 7.83/10. Expected 2026; the degree has not been listed as formally awarded.",
+      "summary": "B.Tech Computer Science & Engineering graduate from Maulana Abul Kalam Azad University of Technology. CGPA 7.83/10.",
       "focus": ["Backend engineering", "AI applications", "Software engineering"]
     },
     {
