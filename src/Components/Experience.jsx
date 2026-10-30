@@ -203,7 +203,7 @@ export default function Experience() {
       {
         label: siteContent.experienceSection.overviewLabels.academicTrack,
         value: latestEducation?.role ?? 'B.Tech, CSE',
-        detail: latestEducation?.title ?? 'TINT, Kolkata',
+        detail: latestEducation?.title ?? 'Maulana Abul Kalam Azad University of Technology',
       },
       {
         label: siteContent.experienceSection.overviewLabels.leadership,
@@ -287,22 +287,13 @@ export default function Experience() {
                       whileHover={{ y: -4 }}
                       transition={{ duration: 0.22 }}
                     >
-                      <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(200px,0.5fr)] md:items-start">
-                        <div>
-                          <h3 className="text-xl font-semibold tracking-[-0.03em] text-white sm:text-2xl md:text-[1.9rem]">
-                            {experience.role}
-                          </h3>
-                          <p className="mt-2 text-base font-medium text-slate-200">
-                            {experience.title}
-                          </p>
-                        </div>
-
-                        <div className="surface-muted rounded-[1.25rem] px-4 py-4">
-                          <p className="metric-label text-white/50">Primary focus</p>
-                          <p className="mt-3 text-sm font-medium leading-7 text-white">
-                            {experience.focus[0]}
-                          </p>
-                        </div>
+                      <div>
+                        <h3 className="text-xl font-semibold tracking-[-0.03em] text-white sm:text-2xl md:text-[1.9rem]">
+                          {experience.role}
+                        </h3>
+                        <p className="mt-2 text-base font-medium text-slate-200">
+                          {experience.title}
+                        </p>
                       </div>
 
                       <p className="mt-5 text-sm leading-7 text-slate-400 sm:text-base">

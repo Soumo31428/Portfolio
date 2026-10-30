@@ -19,7 +19,7 @@ export function detectQueryType(question = '') {
     return 'skills'
   }
 
-  if (includesAny(q, ['certification', 'certificate', 'udemy', 'oracle', 'agentic'])) {
+  if (includesAny(q, ['certification', 'certificate', 'udemy', 'oracle', 'agentic', 'coursera', 'deeplearning', 'neural'])) {
     return 'certification'
   }
 

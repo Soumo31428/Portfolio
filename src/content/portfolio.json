@@ -218,7 +218,7 @@
   },
   "experienceSection": {
     "title": "Education, scholarships, and what I am building toward.",
-    "copy": "I am a final-year B.Tech Computer Science & Engineering student at TINT, Kolkata, expected 2026. The timeline below is education and achievements only — there is no invented employment history.",
+    "copy": "I am a final-year B.Tech Computer Science & Engineering student at Maulana Abul Kalam Azad University of Technology, expected 2026. The timeline below is education and achievements only — there is no invented employment history.",
     "overviewLabels": {
       "currentRole": "Currently",
       "academicTrack": "Academic track",
@@ -233,7 +233,7 @@
       {
         "label": "Academic track",
         "value": "B.Tech, CSE",
-        "detail": "TINT, Kolkata · CGPA 7.83/10"
+        "detail": "Maulana Abul Kalam Azad University of Technology · CGPA 7.83/10"
       },
       {
         "label": "Interests",
@@ -307,11 +307,19 @@
   },
   "certifications": [
     {
+      "title": "Neural Networks and Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": "",
+      "description": "Coursera course on neural networks and deep learning from DeepLearning.AI.",
+      "href": "https://www.coursera.org/account/accomplishments/verify/Y4CE5X8T23WR",
+      "display": true
+    },
+    {
       "title": "Complete Data Science, Machine Learning, DL, NLP Bootcamp",
       "issuer": "Udemy",
       "year": "",
       "description": "Data science, machine learning, deep learning, and NLP coursework.",
-      "href": "",
+      "href": "https://www.udemy.com/certificate/UC-6767631c-dcd9-40ba-b595-eb2d68cd172b/",
       "display": true
     },
     {
@@ -319,7 +327,7 @@
       "issuer": "Oracle",
       "year": "",
       "description": "Foundations of agentic AI systems and associated application patterns.",
-      "href": "",
+      "href": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BA1DA52358D85B531AD2D571B5981ADA5098539B798CB031CAD82AEF783737FE",
       "display": true
     }
   ],
@@ -328,7 +336,6 @@
       "title": "SaaS Backend API Management",
       "category": "Multi-tenant SaaS backend",
       "year": "",
-      "imageKey": "intro",
       "summary": "A multi-tenant SaaS backend with JWT authentication (refresh-token rotation and blacklisting), SHA-256-hashed API keys, and Free/Pro/Enterprise subscription tiers with per-plan usage quotas.",
       "challenge": "Support multiple tenants and subscription tiers while keeping authentication, API keys, and usage quotas consistent and enforceable.",
       "delivery": "Implemented plan-based rate limiting with Redis, and Celery jobs that roll up request logs into daily usage analytics served through dashboard endpoints. Documented the API with OpenAPI 3 (Swagger UI).",
@@ -362,7 +369,6 @@
       "title": "AI – Codebase Research Agent",
       "category": "Django research agent",
       "year": "",
-      "imageKey": "intro",
       "summary": "A Django-based research agent that answers technical questions about public GitHub and local repositories with file- and line-cited evidence, running long research sessions asynchronously with Celery.",
       "challenge": "Answer codebase questions with grounded evidence instead of uncited model output, while keeping tool use bounded and traceable.",
       "delivery": "Explicit agent loop built on ripgrep lexical code search, kept bounded by iteration and tool-call limits, duplicate tool-call detection, 150-line read limits, and one verifier-driven retry. Findings, summary caches, tool-call logs, and research sessions are stored in PostgreSQL and exposed through Django REST Framework session endpoints. PostgreSQL and Redis run in Docker.",
@@ -393,7 +399,6 @@
       "title": "AI – Multi-Agent Customer Support System",
       "category": "Multi-agent support system",
       "year": "",
-      "imageKey": "intro",
       "summary": "A Django multi-agent support system on the Gemini API: a support agent checks orders and delivery status and decides when to escalate, a manager agent reviews escalated cases and decides refunds, and a risk agent returns fraud verdicts.",
       "challenge": "Coordinate support, manager, and risk agents so order lookups, refund decisions, and fraud checks stay policy-aware and reviewable.",
       "delivery": "Added retrieval-augmented generation (RAG) with ChromaDB so agents search company policy documents before answering, and streamed every agent decision and tool call to a live staff dashboard using Server-Sent Events (SSE).",
@@ -423,7 +428,6 @@
       "title": "Django Views Flowchart",
       "category": "Django developer tool",
       "year": "",
-      "imageKey": "intro",
       "summary": "Paste Django urls.py and views.py to generate a clean, interactive API routing flowchart using AST analysis and Mermaid.js.",
       "challenge": "Understand how a Django API is wired without reading every file.",
       "delivery": "A Django app that parses URL patterns (path, re_path, url, include) and function- and class-based views with Python's ast module, then returns a Mermaid.js flowchart from POST /api/analyze/. The frontend is vanilla HTML, CSS, and JavaScript with no build step.",
@@ -452,7 +456,6 @@
       "title": "Django Banking API",
       "category": "Guided project",
       "year": "",
-      "imageKey": "intro",
       "guided": true,
       "summary": "A Docker-containerised banking REST API with Django REST Framework, served behind NGINX, with Celery workers using Redis and RabbitMQ to run background tasks asynchronously.",
       "challenge": "Run a banking API with separate local and production Docker environments and asynchronous workers for background jobs.",
@@ -486,34 +489,34 @@
       "description": "Received government scholarships from Class 8 (NMMSE) through B.Tech."
     },
     {
-      "title": "Smart India Hackathon (SIH)",
+      "title": "Internal Hackathon for Smart India Hackathon (SIH) 2025",
       "year": "2025",
-      "description": "Participated in Smart India Hackathon (SIH), 2025."
+      "description": "Participated in the Internal Hackathon for Smart India Hackathon (SIH) 2025. Topic: AI-Based Internship Recommendation Engine for PM Internship Scheme."
     }
   ],
   "experiences": [
     {
       "period": "Expected 2026",
       "type": "Education",
-      "title": "TINT, Kolkata",
+      "title": "Maulana Abul Kalam Azad University of Technology",
       "role": "B.Tech, Computer Science & Engineering",
-      "summary": "Final-year B.Tech Computer Science & Engineering student at Techno International New Town (TINT), Kolkata. CGPA 7.83/10. Expected 2026; the degree has not been listed as formally awarded.",
+      "summary": "Final-year B.Tech Computer Science & Engineering student at Maulana Abul Kalam Azad University of Technology. CGPA 7.83/10. Expected 2026; the degree has not been listed as formally awarded.",
       "focus": ["Backend engineering", "AI applications", "Software engineering"]
     },
     {
       "period": "2022",
       "type": "Education",
       "title": "Goaltore High School",
-      "role": "Class XII, WBCHSE",
-      "summary": "Completed Class XII under WBCHSE with 87.8%.",
+      "role": "Class XII, West Bengal Council of Higher Secondary Education (WBCHSE)",
+      "summary": "Completed Class XII under the West Bengal Council of Higher Secondary Education (WBCHSE) with 87.8%.",
       "focus": ["WBCHSE", "87.8%"]
     },
     {
       "period": "2020",
       "type": "Education",
       "title": "Goaltore High School",
-      "role": "Class X, WBBSE",
-      "summary": "Completed Class X under WBBSE with 92.28%.",
+      "role": "Class X, West Bengal Board of Secondary Education (WBBSE)",
+      "summary": "Completed Class X under the West Bengal Board of Secondary Education (WBBSE) with 92.28%.",
       "focus": ["WBBSE", "92.28%"]
     },
     {
@@ -527,10 +530,10 @@
     {
       "period": "2025",
       "type": "Achievement",
-      "title": "Smart India Hackathon",
-      "role": "Participant, SIH 2025",
-      "summary": "Participated in Smart India Hackathon (SIH), 2025.",
-      "focus": ["Hackathon", "Team collaboration"]
+      "title": "Internal Hackathon for Smart India Hackathon (SIH) 2025",
+      "role": "Participant",
+      "summary": "Participated in the Internal Hackathon for Smart India Hackathon (SIH) 2025. Topic: AI-Based Internship Recommendation Engine for PM Internship Scheme.",
+      "focus": ["SIH 2025", "PM Internship Scheme"]
     }
   ]
 }

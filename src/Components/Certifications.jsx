@@ -29,7 +29,7 @@ export default function Certifications() {
 
             <Reveal delay={0.1}>
               <p className="section-copy mx-auto max-w-2xl">
-                Coursework and credentials in data science, machine learning, NLP, and agentic AI.
+                Coursework and credentials in neural networks, data science, machine learning, NLP, and agentic AI.
               </p>
             </Reveal>
           </div>

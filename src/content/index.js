@@ -1,19 +1,9 @@
-import introBg from '../assets/intro_bg.webp'
 import portfolio from './portfolio.json'
-
-const projectImages = {
-  intro: introBg,
-}
-
-const resolveProjectImage = (project) => ({
-  ...project,
-  image: projectImages[project.imageKey] ?? project.image ?? introBg,
-})
 
 export const siteContent = portfolio
 export const navigationSections = portfolio.navigation
 export const socialLinks = portfolio.socialLinks
-export const projectsData = portfolio.projects.map(resolveProjectImage)
+export const projectsData = portfolio.projects
 export const experiencesData = portfolio.experiences
 
 const workExperiences = experiencesData.filter((experience) => experience.type === 'Work')

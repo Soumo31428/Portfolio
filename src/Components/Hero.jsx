@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
 import Reveal from '../Animation/Reveal'
 import StaggerText from '../Animation/StaggerText'
-import heroVisual from '../assets/intro_bg.webp'
+import heroVisual from '../assets/my_pic.webp'
 import { portfolioStats, siteContent, socialLinks } from '../content'
 
 const socialIconMap = {
@@ -118,9 +118,9 @@ export default function Hero() {
                   <MobileParallax className="relative" offset={64} scale={1.14}>
                     <img
                       src={heroVisual}
-                      alt="Code editor visual representing backend and AI application work"
-                      className="h-[22rem] w-full object-cover sm:h-[28rem]"
-                      loading="lazy"
+                      alt="Souvik Chakraborty"
+                      className="h-[22rem] w-full object-cover object-top sm:h-[28rem]"
+                      loading="eager"
                       decoding="async"
                     />
                   </MobileParallax>
