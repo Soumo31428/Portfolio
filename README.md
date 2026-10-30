@@ -2,6 +2,8 @@
 
 Personal portfolio for Souvik Chakraborty, a B.Tech Computer Science & Engineering graduate (2026) focused on backend engineering and AI-powered applications.
 
+Live site: https://soumo31428.github.io/Soumo31428-Soumo31428.github.io/
+
 ## Stack
 
 - React 18
@@ -36,6 +38,24 @@ npm run lint
 # Format
 npm run format
 ```
+
+## Deploy to GitHub Pages
+
+This repository is configured to deploy with GitHub Actions using the workflow in
+`.github/workflows/deploy.yml`.
+
+1. Push the repository to GitHub.
+2. Open **Settings > Pages** in the repository.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Open **Settings > Secrets and variables > Actions** and add any optional
+   `VITE_*` secrets or repository variables used by the app. Do not commit API keys.
+5. Push to the `main` branch, or run **Deploy to GitHub Pages** manually from
+   the repository's **Actions** tab.
+6. Wait for the workflow to finish, then open the deployment URL shown in the
+   workflow summary.
+
+The Vite configuration uses relative asset paths, so the site works from this
+project Pages URL as well as from a local preview.
 
 ## Contact
 

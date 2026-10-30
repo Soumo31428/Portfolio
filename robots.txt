@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://github.com/Soumo31428
+Sitemap: https://soumo31428.github.io/Soumo31428-Soumo31428.github.io/sitemap.xml
