@@ -244,7 +244,7 @@
   },
   "projectsSection": {
     "title": "Backend systems, agents, and APIs I have built.",
-    "copy": "Four projects spanning multi-tenant SaaS APIs, a codebase research agent, multi-agent support, and a guided banking API. Each card covers the work, the delivery choices, and the stack.",
+    "copy": "Five projects spanning multi-tenant SaaS APIs, a codebase research agent, multi-agent support, a Django views flowchart, and a guided banking API. Each card covers the work, the delivery choices, and the stack.",
     "summaryLabels": {
       "caseStudies": "Projects",
       "liveDemos": "Public repos",
@@ -418,6 +418,35 @@
       ],
       "githubRepo": "https://github.com/Soumo31428/Django-Agentic-AI",
       "liveDemo": ""
+    },
+    {
+      "title": "Django Views Flowchart",
+      "category": "Django developer tool",
+      "year": "",
+      "imageKey": "intro",
+      "summary": "Paste Django urls.py and views.py to generate a clean, interactive API routing flowchart using AST analysis and Mermaid.js.",
+      "challenge": "Understand how a Django API is wired without reading every file.",
+      "delivery": "A Django app that parses URL patterns (path, re_path, url, include) and function- and class-based views with Python's ast module, then returns a Mermaid.js flowchart from POST /api/analyze/. The frontend is vanilla HTML, CSS, and JavaScript with no build step.",
+      "impact": "Developers can paste or upload Django routing code and get an interactive, color-coded routing tree (FBVs, CBVs, includes, and unresolved references).",
+      "stack": [
+        "Python",
+        "Django",
+        "Mermaid.js",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "python-dotenv",
+        "Gunicorn"
+      ],
+      "metrics": [
+        "AST-based URL and view parsing",
+        "FBV and CBV detection",
+        "Mermaid.js routing flowchart",
+        "POST /api/analyze/",
+        "No database models"
+      ],
+      "githubRepo": "https://github.com/Soumo31428/Django-view-flowchart",
+      "liveDemo": "https://views-flowchart.onrender.com"
     },
     {
       "title": "Django Banking API",
