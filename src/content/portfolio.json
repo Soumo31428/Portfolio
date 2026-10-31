@@ -27,6 +27,12 @@
       "label": "GitHub",
       "href": "https://github.com/Soumo31428",
       "iconKey": "github"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/souvik-chakraborty-84b26626b",
+      "iconKey": "linkedin"
     }
   ],
   "hero": {
@@ -47,7 +53,7 @@
         "iconKey": "mail"
       }
     ],
-    "heroSocialLinkIds": ["github"],
+    "heroSocialLinkIds": ["github", "linkedin"],
     "quickFacts": [
       {
         "label": "Focus",
@@ -280,6 +286,12 @@
         "value": "github.com/Soumo31428",
         "href": "https://github.com/Soumo31428",
         "iconKey": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/souvik-chakraborty-84b26626b",
+        "href": "https://www.linkedin.com/in/souvik-chakraborty-84b26626b",
+        "iconKey": "linkedin"
       }
     ],
     "emailjs": {

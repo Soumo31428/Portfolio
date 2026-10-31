@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import { FiArrowUpRight, FiGithub, FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi'
-import { SiGithub } from 'react-icons/si'
+import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi'
+import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { AnimatePresence, motion } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
 import Reveal from '../Animation/Reveal'
@@ -15,6 +15,7 @@ const initialForm = {
 
 const socialIconMap = {
   github: SiGithub,
+  linkedin: SiLinkedin,
 }
 
 const contactIconMap = {
@@ -22,6 +23,7 @@ const contactIconMap = {
   mail: FiMail,
   phone: FiPhone,
   github: FiGithub,
+  linkedin: FiLinkedin,
 }
 
 export default function Contact() {

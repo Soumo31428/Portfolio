@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FiArrowDownRight, FiDownload, FiMail } from 'react-icons/fi'
 import { motion } from 'motion/react'
 import MobileParallax from '../Animation/MobileParallax'
@@ -9,6 +9,7 @@ import { portfolioStats, siteContent, socialLinks } from '../content'
 
 const socialIconMap = {
   github: FaGithub,
+  linkedin: FaLinkedin,
 }
 
 const ctaIconMap = {
@@ -165,11 +166,11 @@ export default function Hero() {
                           href={href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-slate-200"
+                          aria-label={label}
+                          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-slate-200"
                           whileHover={{ y: -3, backgroundColor: 'rgba(255,255,255,0.08)' }}
                         >
-                          {Icon ? <Icon className="text-base" /> : null}
-                          {label}
+                          {Icon ? <Icon className="text-lg" /> : null}
                         </motion.a>
                       )
                     })}

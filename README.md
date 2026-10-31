@@ -62,6 +62,7 @@ project Pages URL as well as from a local preview.
 - Email: soumo.study8172@gmail.com
 - Phone: 8172011499
 - GitHub: https://github.com/Soumo31428
+- LinkedIn: https://www.linkedin.com/in/souvik-chakraborty-84b26626b
 - Location: Kolkata, West Bengal, India
 
 ## AI Chatbot (optional)

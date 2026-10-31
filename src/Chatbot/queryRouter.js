@@ -31,7 +31,7 @@ export function detectQueryType(question = '') {
     return 'achievement'
   }
 
-  if (includesAny(q, ['contact', 'email', 'phone', 'github', 'reach'])) {
+  if (includesAny(q, ['contact', 'email', 'phone', 'github', 'linkedin', 'reach'])) {
     return 'contact'
   }
 
