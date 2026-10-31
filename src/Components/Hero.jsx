@@ -126,10 +126,7 @@ export default function Hero() {
                   </MobileParallax>
 
                   <div className="hero-image-overlay absolute inset-x-0 bottom-0 p-6">
-                    <span className="eyebrow-chip overlay-chip">
-                      {siteContent.site.availability}
-                    </span>
-                    <h2 className="mt-4 text-2xl font-semibold text-white">
+                    <h2 className="text-2xl font-semibold text-white">
                       {siteContent.hero.overlayTitle}
                     </h2>
                   </div>
